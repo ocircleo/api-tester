@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+}
+#submit {
+  width: 100%;
+}
+#submit input {
+  width: 100%;
+  padding: 5px;
+  font-size: 25px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+.main-input {
+  display: flex;
+  gap: 10px;
+}
+.main-input button {
+  padding: 4px 15px;
+  border-radius: 4px;
+  background-color: orangered;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-input button:active {
+  transform: scale(0.8);
+}
+.main-input select {
+  text-align: center;
+  font-weight: 700;
+  border-radius: 4px;
+}
+fieldset{
+    border: none;
+}

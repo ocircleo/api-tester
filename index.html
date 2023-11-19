@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>post man</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="submit">
+        <fieldset class="main-input">
+          <select name="method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+          </select>
+          <input name="api" type="text" />
+          <button type="submit">fetch</button>
+        </fieldset>
+      </form>
+      <div id="display">
+
+
+      </div>
+    </div>
+
+    <script src="/public/script.js"></script>
+  </body>
+</html>
