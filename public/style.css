@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   height: auto;
@@ -40,7 +41,81 @@
   text-align: center;
   font-weight: 700;
   border-radius: 4px;
+  border: 2px solid orangered;
+  color: orangered;
 }
-fieldset{
-    border: none;
+fieldset {
+  border: none;
+}
+.add {
+  display: flex;
+  padding: 10px;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+
+}
+.inputs{
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  flex-direction: column;
+}
+.inputs input{
+border: 2px dashed orangered !important;
+font-size: 19px !important;
+color: rgb(76, 76, 76) !important;
+}
+.btn{
+  border: transparent;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: orangered;
+  color: white;
+  transition: .2s;
+  cursor: pointer;
+  font-size: 16px;
+}
+#addField{
+  padding: 10px;
+  color: orangered;
+  border: 2px solid orangered;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:active{
+  transform: scale(0.9);
+}
+.inputs button{
+  background-color: red;
+}
+@media screen and (min-width:500px) {
+  .inputs{
+    flex-direction: row;
+  }
+}
+#display{
+  background-color: aliceblue;
+  min-height: 300px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.title{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 20px 0;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
+hr{
+  margin: 20px 0;
+  height: 4px;
+  background-color: tomato;
+  border: transparent;
 }

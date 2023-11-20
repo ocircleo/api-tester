@@ -19,11 +19,18 @@
           <input name="api" type="text" />
           <button type="submit">fetch</button>
         </fieldset>
+        <hr>
       </form>
-      <div id="display">
-
-
+      <div class="add" id="add">
+        <select id="addField">
+          <option selected>Add Field</option>
+          <option value="text">Text</option>
+          <option value="number">Number</option>
+          <option value="file">Image</option>
+        </select>
       </div>
+      <p class="title">api res data</p>
+      <div id="display"></div>
     </div>
 
     <script src="/public/script.js"></script>
