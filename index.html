@@ -19,16 +19,41 @@
           <input name="api" type="text" />
           <button type="submit">fetch</button>
         </fieldset>
-        <hr>
+
+        <div class="tabs">
+          <span
+            id="tab-btn-1"
+            class="tabs-button btn-active"
+            onclick="showTab('tab-1','tab-btn-1')"
+          >
+            body
+          </span>
+          <span
+            id="tab-btn-2"
+            class="tabs-button"
+            onclick="showTab('tab-2','tab-btn-2')"
+          >
+            headers
+          </span>
+        </div>
+        <div id="tab-1" class="block tab-content">
+          <div></div>
+          <div class="add" id="add">
+            <select id="addField">
+              <option selected>Add Field</option>
+              <option value="text">Text</option>
+              <option value="number">Number</option>
+              <option value="file">Image</option>
+            </select>
+          </div>
+        </div>
+        <div id="tab-2" class="tab-content hidden">
+          <div class="add">
+            <button class="btn">Add Field</button>
+          </div>
+        </div>
       </form>
-      <div class="add" id="add">
-        <select id="addField">
-          <option selected>Add Field</option>
-          <option value="text">Text</option>
-          <option value="number">Number</option>
-          <option value="file">Image</option>
-        </select>
-      </div>
+
       <p class="title">api res data</p>
       <div id="display"></div>
     </div>

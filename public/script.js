@@ -5,7 +5,7 @@ const showInUi = (data) => {
   display.innerText = data;
 };
 const deleteField = (e) => {
-  submit.removeChild(e.target.parentElement);
+  e.target.parentElement.parentElement.removeChild(e.target.parentElement);
 };
 addField.addEventListener("change", (e) => {
   if (e.target.value == "Add") return;
@@ -22,8 +22,8 @@ addField.addEventListener("change", (e) => {
   if (e.target.value == "file") {
     value.type = "file";
     value.accept = "image/*";
-  }else{
-    value.type = e.target.value
+  } else {
+    value.type = e.target.value;
   }
 
   value.placeholder = "value";
@@ -34,7 +34,7 @@ addField.addEventListener("change", (e) => {
   btn.innerText = "Delete";
   btn.addEventListener("click", deleteField);
   fieldset.appendChild(btn);
-  submit.appendChild(fieldset);
+  e.target.parentElement.parentElement.appendChild(fieldset);
 });
 
 submit.addEventListener("submit", (e) => {
@@ -52,3 +52,18 @@ submit.addEventListener("submit", (e) => {
   // } else {
   // }
 });
+
+function showTab(data, btn) {
+  let allTabs = document.getElementsByClassName("tab-content");
+  let allTabBtns = document.getElementsByClassName("tabs-button");
+  for (let i = 0; i < allTabs.length; i++) {
+    allTabs[i].classList.remove("block");
+    allTabs[i].classList.add("hidden");
+  }
+  for (let i = 0; i < allTabBtns.length; i++) {
+    allTabBtns[i].classList.remove("btn-active");
+  }
+  document.getElementById(data).classList.add("block");
+  document.getElementById(data).classList.remove("hidden");
+  document.getElementById(btn).classList.add("btn-active");
+}

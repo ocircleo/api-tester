@@ -53,31 +53,30 @@ fieldset {
   margin: 10px 0;
   align-items: center;
   justify-content: center;
-
 }
-.inputs{
+.inputs {
   display: flex;
   gap: 10px;
   margin: 10px 0;
   flex-direction: column;
 }
-.inputs input{
-border: 2px dashed orangered !important;
-font-size: 19px !important;
-color: rgb(76, 76, 76) !important;
+.inputs input {
+  border: 2px dashed orangered !important;
+  font-size: 19px !important;
+  color: rgb(76, 76, 76) !important;
 }
-.btn{
+.btn {
   border: transparent;
   padding: 10px 15px;
   border-radius: 5px;
   font-weight: 700;
   background-color: orangered;
   color: white;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
   font-size: 16px;
 }
-#addField{
+#addField {
   padding: 10px;
   color: orangered;
   border: 2px solid orangered;
@@ -86,24 +85,24 @@ color: rgb(76, 76, 76) !important;
   cursor: pointer;
 }
 
-.btn:active{
+.btn:active {
   transform: scale(0.9);
 }
-.inputs button{
+.inputs button {
   background-color: red;
 }
-@media screen and (min-width:500px) {
-  .inputs{
+@media screen and (min-width: 500px) {
+  .inputs {
     flex-direction: row;
   }
 }
-#display{
+#display {
   background-color: aliceblue;
   min-height: 300px;
   width: 100%;
   overflow-x: scroll;
 }
-.title{
+.title {
   font-size: 25px;
   text-align: center;
   font-weight: 700;
@@ -113,9 +112,35 @@ color: rgb(76, 76, 76) !important;
   text-underline-offset: 10px;
   text-decoration-thickness: 3px;
 }
-hr{
-  margin: 20px 0;
-  height: 4px;
-  background-color: tomato;
-  border: transparent;
+
+.tabs {
+  height: auto;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+.tabs-button {
+  border: 2px solid tomato;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: tomato;
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: white;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+.btn-active {
+  background-color: tomato !important;
+  color: white !important;
+}
+
+.hidden {
+  display: none ;
+}
+.block {
+  display: block ;
+}
+.tab-content {
 }
